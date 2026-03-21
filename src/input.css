@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-100: var(--color-zinc-800);
+  --color-bg-200: var(--color-zinc-900);
+  --color-text: #f4f4f5;
+  --color-muted: #a1a1aa;
+  --color-border: var(--color-zinc-600);
+  --color-primary: #6366f1;
+  --color-accent: var(--color-emerald-400);
+  --color-secondary: #18181b;
+  --font-sans: Rubik, sans-serif
+}
+
+[id] {
+  scroll-margin-top: 100px;
+}
