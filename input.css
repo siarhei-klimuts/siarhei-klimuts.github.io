@@ -1,17 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg-100: var(--color-zinc-800);
-  --color-bg-200: #3a485f;
+  --color-bg-100: #191f29;
+  --color-bg-200: #27303f;
+  --color-bg-300: #3a485f;
   --color-text: #f4f4f5;
   --color-muted: #a1a1aa;
-  --color-border: var(--color-zinc-600);
-  --color-primary: #6366f1;
-  --color-accent: #c0da93;
-  --color-secondary: #18181b;
+  --color-border: #61789e;
+  --color-primary: #0f3e8a;
+  --color-accent: #a1ff00;
+  --color-secondary: #1968e6;
   --font-sans: Rubik, sans-serif
 }
 
-[id] {
-  scroll-margin-top: 100px;
+section {
+  @apply h-screen flex flex-col justify-center gap-16
+}
+
+.btn {
+  @apply cursor-pointer bg-primary rounded hover:bg-secondary shadow-xs leading-5 text-sm px-4 py-2.5
+}
+
+h2 {
+  @apply font-semibold text-3xl text-center my-4
+}
+
+.subtitle {
+  @apply text-muted text-center
 }
